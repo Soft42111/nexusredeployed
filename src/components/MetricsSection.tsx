@@ -8,7 +8,7 @@ const MetricsSection = () => {
 
   const metrics = [
     { value: 500000, label: "Community Members Managed", suffix: "+" },
-    { value: 150, label: "Projects Completed", suffix: "+" },
+    { value: 20, label: "Projects Completed", suffix: "+" },
     { value: 99, label: "Client Satisfaction Rate", suffix: "%" },
     { value: 24, label: "Hours Support Coverage", suffix: "/7" }
   ];
