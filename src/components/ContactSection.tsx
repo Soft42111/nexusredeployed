@@ -36,7 +36,7 @@ const ContactSection = () => {
               </p>
               <Button 
                 className="w-full h-10 sm:h-12 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-lg"
-                onClick={() => window.open('mailto:mktnexus@partnershipsnexus.com', '_blank')}
+                onClick={() => window.open('mailto:partnershipnexus@mktingnexus.com', '_blank')}
               >
                 <Mail className="w-4 h-4 mr-2" />
                 Send Email
