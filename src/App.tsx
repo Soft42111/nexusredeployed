@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import ScrollToTopButton from "@/components/ui/ScrollToTopButton"; // ✅ Added import
+import ScrollToBottomButton from "@/components/ui/ScrollToBottomButton"; // ✅ NEW import
 
 const queryClient = new QueryClient();
 
@@ -21,8 +22,9 @@ const App = () => (
           <Route path="*" element={<NotFound />} />
         </Routes>
 
-        {/* ✅ Added scroll-to-top button */}
+        {/* ✅ Scroll-to-top and bottom buttons */}
         <ScrollToTopButton />
+        <ScrollToBottomButton /> {/* ✅ Added this line only */}
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
