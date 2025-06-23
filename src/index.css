@@ -180,11 +180,18 @@ body {
   contain: layout style;
 }
 /* Custom cursor */
+/* 👆 Normal areas = custom cursor */
 body {
   cursor: url('/cursor.png') 16 16, auto;
 }
 
+/* 👉 Interactive elements = same custom cursor (so no hand shows up) */
 a,
-button {
-  cursor: url('/pointer.png') 16 16, auto;
+button,
+input[type="submit"],
+input[type="button"],
+label,
+select,
+[role="button"] {
+  cursor: url('/cursor.png') 16 16, auto !important;
 }
