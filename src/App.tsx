@@ -5,8 +5,9 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
-import ScrollToTopButton from "@/components/ui/ScrollToTopButton"; // ✅ Added import
-import ScrollToBottomButton from "@/components/ui/ScrollToBottomButton"; // ✅ NEW import
+import ScrollToTopButton from "@/components/ui/ScrollToTopButton";
+import ScrollToBottomButton from "@/components/ui/ScrollToBottomButton";
+import ScrollButtons from "@/components/ui/ScrollButtons"; // ✅ New combined button
 
 const queryClient = new QueryClient();
 
@@ -24,10 +25,6 @@ const App = () => (
 
         {/* ✅ Scroll-to-top and bottom buttons */}
         <ScrollToTopButton />
-        <ScrollToBottomButton /> {/* ✅ Added this line only */}
+        <ScrollToBottomButton />
+        <ScrollButtons /> {/* ✅ Added this ONLY */}
       </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
-
-export default App;
