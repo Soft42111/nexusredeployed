@@ -7,7 +7,7 @@ const MetricsSection = () => {
   const { elementRef, isVisible } = useScrollAnimation<HTMLDivElement>();
 
   const metrics = [
-    { value: 1500000, label: "Community Members Managed over all social media", suffix: "+" },
+    { value: 500000, label: "Community Members Managed over all social media", suffix: "+" },
     { value: 20, label: "Web3 Leading Projects that trust us", suffix: "+" },
     { value: 99, label: "Client Satisfaction Rate", suffix: "%" },
     { value: 24, label: "Hours Support Coverage", suffix: "/7" }
