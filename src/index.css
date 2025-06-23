@@ -180,12 +180,12 @@ body {
   contain: layout style;
 }
 /* Custom cursor */
-/* 👆 Normal areas = your main cursor */
+/* For normal areas */
 body {
-  cursor: url('/cursor.png') 16 16, auto;
+  cursor: url('/cursor-fixed.png') 16 16, auto;
 }
 
-/* 👉 Links, buttons = your special pointer */
+/* For clickable elements */
 a,
 button,
 input[type="submit"],
