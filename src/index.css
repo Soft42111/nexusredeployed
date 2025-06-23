@@ -180,12 +180,6 @@ body {
   contain: layout style;
 }
 /* Custom cursor */
-/* For normal areas */
-body {
-  cursor: url('/cursor-fixed.png') 16 16, auto;
-}
-
-/* For clickable elements */
 a,
 button,
 input[type="submit"],
@@ -193,5 +187,5 @@ input[type="button"],
 label,
 select,
 [role="button"] {
-  cursor: url('/pointer.png') 16 16, auto !important;
+  cursor: url('/pointer.png') 0 0, auto !important;
 }
