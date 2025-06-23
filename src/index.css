@@ -181,8 +181,10 @@ body {
 }
 /* Custom cursor */
 body {
-  cursor: url('/cursor-fixed.png') 24 24, auto;
+  cursor: url('/cursor.png') 16 16, auto;
 }
-* {
-  cursor: url('/cursor-fixed.png') 24 24, auto !important;
+
+a,
+button {
+  cursor: url('/pointer.png') 16 16, auto;
 }
