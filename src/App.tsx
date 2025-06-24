@@ -11,22 +11,25 @@ import ScrollButtons from "@/components/ui/ScrollButtons"; // ✅ New combined b
 
 const queryClient = new QueryClient();
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+export default function App() {
+  return (
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Index />} />
+            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
 
-        {/* ✅ Scroll-to-top and bottom buttons */}
-        <ScrollToTopButton />
-        <ScrollToBottomButton />
-        <ScrollButtons /> {/* ✅ Added this ONLY */}
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>)
+          {/* ✅ Scroll-to-top and bottom buttons */}
+          <ScrollToTopButton />
+          <ScrollToBottomButton />
+          <ScrollButtons /> {/* ✅ Added this ONLY */}
+        </BrowserRouter>
+      </TooltipProvider>
+    </QueryClientProvider>
+  );
+}
