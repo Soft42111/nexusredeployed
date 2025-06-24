@@ -4,6 +4,8 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Ensure Tailwind CSS is installed and configured */
+
 :root {
   --background: 224 71.4% 4.1%;
   --foreground: 210 20% 98%;

@@ -28,3 +28,5 @@ const App = () => (
         <ScrollToBottomButton />
         <ScrollButtons /> {/* ✅ Added this ONLY */}
       </BrowserRouter>
+    </TooltipProvider>
+  </QueryClientProvider>)
