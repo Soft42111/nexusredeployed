@@ -195,5 +195,5 @@ input[type="button"],
 label,
 select,
 [role="button"] {
-  cursor: url('/pointer 1.png') 8 4, auto !important;
+  cursor: url('/pointer 1.png') 0 0, auto !important;
 }
